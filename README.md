@@ -10,7 +10,7 @@ This api focuses on performing bulk snippet match to a given component and compo
 
 # usage
 ```
-hubsm https://blackduck.com/api/ "TOKEN" project_version_url signature_scan_codelocation_url matchto_components_version_url match_string_or_path entries_to_match
+hubsm 1. https://blackduck.com/api/ "2.TOKEN" 3.project_version_url 4.signature_scan_codelocation_url 5.matchto_components_version_url 6.match_string_or_path 7.entries_to_match
 
 example:
 project_version_url:
