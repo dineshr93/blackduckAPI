@@ -55,7 +55,11 @@ compile:
 
 	set GOOS=linux
 	set GOARCH=amd64
-	go build -o bin/${BINARY_NAME} main.go
+	go build -o bin/${BINARY_NAME.amd63} main.go
+
+	set GOOS=linux
+	set GOARCH=arm64
+	go build -o bin/${BINARY_NAME.amd63} main.go
 
 test: build
 	./bin/${BINARY_NAME} -h
