@@ -72,3 +72,7 @@ copy: test
 
 help: ## Show this help
 	@${HELP_CMD}
+
+license:
+	reuse annotate --copyright "Dinesh Ravi" --year 2023 --license GPL-3.0-only -r models outputmodel projectsmodel scansummariesmodel service sourcebomentriesmodel main.go Makefile .\README.md .\.gitignore .\e_config.yml .\go.mod .\go.mod .\helpers .\projectversionmodel .\go.sum
+	reuse lint
