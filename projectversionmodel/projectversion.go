@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Dinesh Ravi
+//
+// SPDX-License-Identifier: GPL-3.0-only
+
 package projectversionmodel
 
 import "time"

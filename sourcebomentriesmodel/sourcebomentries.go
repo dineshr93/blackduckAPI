@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Dinesh Ravi
+//
+// SPDX-License-Identifier: GPL-3.0-only
+
 package sourcebomentriesmodel
 
 import "time"

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Dinesh Ravi
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
 ROOT_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 OS := $(go version | cut -d' ' -f 4 | cut -d'/' -f 1)
 ARCH := $(go version | cut -d' ' -f 4 | cut -d'/' -f 2)

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Dinesh Ravi
+//
+// SPDX-License-Identifier: GPL-3.0-only
+
 module github.com/dineshr93/blackduckAPI
 
 go 1.21.0
