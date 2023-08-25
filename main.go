@@ -1,7 +1,7 @@
 package main
 
 import (
-	service "github.com/dineshr93/blackduckAPI/serice"
+	service "github.com/dineshr93/blackduckAPI/service"
 )
 
 func main() {
@@ -13,14 +13,14 @@ func main() {
 	// /scan-summaries
 	codelocation := "https://blackduck.ebgroup.elektrobit.com/api/codelocations/3cf0a11a-e453-4d64-ba3b-5ee87aaaeabd"
 	// boost
-	// matchTOComponent := "https://blackduck.ebgroup.elektrobit.com/api/components/4eac8f37-d9e5-4344-83d0-be0e9fd42a6a"
-	// matchToComponentVersion := "https://blackduck.ebgroup.elektrobit.com/api/components/4eac8f37-d9e5-4344-83d0-be0e9fd42a6a/versions/9b57e540-34c1-4f6c-89cd-a0137e1959b6"
-	// matchString := "boost"
+	matchTOComponent := "https://blackduck.ebgroup.elektrobit.com/api/components/4eac8f37-d9e5-4344-83d0-be0e9fd42a6a"
+	matchToComponentVersion := "https://blackduck.ebgroup.elektrobit.com/api/components/4eac8f37-d9e5-4344-83d0-be0e9fd42a6a/versions/9b57e540-34c1-4f6c-89cd-a0137e1959b6"
+	matchString := "boost"
 	// bluetoothcomponent
-	matchTOComponent := "https://blackduck.ebgroup.elektrobit.com/api/components/771d0705-eff8-4865-9d20-81a17c072717"
-	matchToComponentVersion := "https://blackduck.ebgroup.elektrobit.com/api/components/771d0705-eff8-4865-9d20-81a17c072717/versions/22dfc3be-aaa3-44e8-a9f5-9bae149f4e42"
-	matchString := "Bluetooth2"
-	entries := "10"
+	// matchTOComponent := "https://blackduck.ebgroup.elektrobit.com/api/components/771d0705-eff8-4865-9d20-81a17c072717"
+	// matchToComponentVersion := "https://blackduck.ebgroup.elektrobit.com/api/components/771d0705-eff8-4865-9d20-81a17c072717/versions/22dfc3be-aaa3-44e8-a9f5-9bae149f4e42"
+	// matchString := "Bluetooth2"
+	entries := "13"
 
 	hub := service.HUB{}
 	hub.Loadinit()
