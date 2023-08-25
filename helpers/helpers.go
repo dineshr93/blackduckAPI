@@ -23,7 +23,12 @@ func ParseYML() *models.ConfigFile {
 	// Read the YAML file
 	data, err := os.ReadFile("config.yml")
 	if err != nil {
-		log.Fatalf("Error reading YAML file: %v", err)
+		log.Println("Error reading YAML file:", err)
+		log.Println("Processing os.Args[1] and os.Args[2]")
+		var config models.ConfigFile
+		config.Apihost = os.Args[1]
+		config.InitToken = "token " + os.Args[2]
+		return &config
 	}
 
 	// Create a struct to hold the parsed data
@@ -157,4 +162,16 @@ func GetResponse(client *http.Client, req *http.Request) ([]byte, int, error) {
 	}
 
 	return databytes, res.StatusCode, nil
+}
+
+func GetTextsUpto(url string, indexText string) string {
+	index := strings.Index(url, indexText)
+	var newURL string
+	if index != -1 {
+		newURL = url[:index]
+		fmt.Println(newURL)
+	} else {
+		fmt.Println("'/versions' not found in the URL.")
+	}
+	return newURL
 }
