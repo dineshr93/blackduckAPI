@@ -16,7 +16,7 @@ docker pull dineshr93/hubsm:1.0
 ## command
 
 ```
-docker run dineshr93/hubsm:1.0 1. Hub api url 2. hub token 3. projectversionlink 4. codelocation 5. matchToComponentVersion 6.matchString 7. EntriesToResolve
+docker run dineshr93/hubsm:1.0 1.Hub_api_url 2.hub_token 3.projectversionlink 4.codelocation 5.matchToComponentVersion 6.matchString 7.EntriesToResolve
 ```
 
 ## alias image
