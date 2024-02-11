@@ -76,6 +76,7 @@ help: ## Show this help
 license:
 	reuse annotate --copyright "Dinesh Ravi" --year 2023 --license GPL-3.0-only -r models outputmodel projectsmodel scansummariesmodel service sourcebomentriesmodel main.go Makefile .\README.md .\.gitignore .\e_config.yml .\go.mod .\go.mod .\helpers .\projectversionmodel .\go.sum
 	reuse lint
+
 .PHONY: dbuild # Build the container image
 dbuild:
 	@docker buildx create --use --name=crossplat --node=crossplat && \
