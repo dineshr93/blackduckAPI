@@ -19,9 +19,17 @@ docker pull dineshr93/hubsm:1.0
 docker run dineshr93/hubsm:1.0 1. Hub api url 2. hub token 3. projectversionlink 4. codelocation 5. matchToComponentVersion 6.matchString 7. EntriesToResolve
 ```
 
+## alias image
+```
+alias hubsm='docker pull dineshr93/hubsm:1.0'
+```
+
 ### example
 ```
 docker run dineshr93/hubsm:1.0 https://blackduck.com/api/ Zzc1ZjliMmQtMWZmZi00NDBjLTliY2UtZGM0ODNkOTNmMYzNTlmZjIxLTMwZjMtNGFkZS1iMDRhLWFjMDBmMmU4MmUyNJ https://blackduck.com/api/projects/10470624-5c56-4a74-b145-98a4963f4405/versions/cfda0cdc-831a-4fd1-a200-ac3d9af4d14f https://blackduck.com/api/codelocations/e2344cc7-2c84-4432-9feb-d2cf62d3184f https://blackduck.com/api/components/55697cd6-efbf-418d-b231-96df78f46dd8/versions/62fb441c-300a-4515-9c8c-b9e9c655f422 PinyinIME 1000
+
+hubsm https://blackduck.com/api/ Zzc1ZjliMmQtMWZmZi00NDBjLTliY2UtZGM0ODNkOTNmMYzNTlmZjIxLTMwZjMtNGFkZS1iMDRhLWFjMDBmMmU4MmUyNJ https://blackduck.com/api/projects/10470624-5c56-4a74-b145-98a4963f4405/versions/cfda0cdc-831a-4fd1-a200-ac3d9af4d14f https://blackduck.com/api/codelocations/e2344cc7-2c84-4432-9feb-d2cf62d3184f https://blackduck.com/api/components/55697cd6-efbf-418d-b231-96df78f46dd8/versions/62fb441c-300a-4515-9c8c-b9e9c655f422 PinyinIME 1000
+
 
 ```
 
