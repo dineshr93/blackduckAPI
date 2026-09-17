@@ -39,6 +39,7 @@ type Accepts struct {
 	AppBom4json                  string
 	AppBom5json                  string
 	AppBom6json                  string
+	AppBom7json                  string
 	AppComponentDetail4json      string
 	AppComponentDetail5json      string
 	Appcopyright4json            string

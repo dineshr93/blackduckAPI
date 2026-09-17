@@ -233,8 +233,8 @@ func (h *HUB) MatchSnippetToGivenComponent() {
 		Method:      http.MethodPut,
 		APILinks:    h.links.SpecificPVBulkSnippetBomEntries,
 		QueryString: "",
-		Accepts:     h.accepts.AppBom6json,
-		ContentType: h.accepts.AppBom6json,
+		Accepts:     h.accepts.AppBom7json,
+		ContentType: h.accepts.AppBom7json,
 		Body:        strings.NewReader(h.reqEssentials.BSBEBody),
 	}
 	req := helpers.PrepareRequest(h.reqEssentials)

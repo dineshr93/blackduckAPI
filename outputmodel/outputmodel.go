@@ -28,4 +28,5 @@ type SnippetBomComponentRequest struct {
 	ReviewStatus     string `json:"reviewStatus,omitempty"`
 	Component        string `json:"component,omitempty"`
 	ComponentVersion string `json:"componentVersion,omitempty"`
+	Origin           string `json:"origin,omitempty"`
 }

@@ -35,6 +35,8 @@ type Items struct {
 	HostName             string    `json:"hostName,omitempty"`
 	ScanType             string    `json:"scanType,omitempty"`
 	RetainUnmatchedFiles bool      `json:"retainUnmatchedFiles,omitempty"`
+	AiModelMatchCount    int       `json:"aiModelMatchCount,omitempty"`
+	ErrorCode            string    `json:"errorCode,omitempty"`
 	Meta                 Meta      `json:"_meta,omitempty"`
 	UpdatedAt            time.Time `json:"updatedAt,omitempty"`
 	StatusMessage        string    `json:"statusMessage,omitempty"`

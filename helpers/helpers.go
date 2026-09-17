@@ -66,6 +66,7 @@ func LoadAccepts() *models.Accepts {
 		AppBom4json:                  "application/vnd.blackducksoftware.bill-of-materials-4+json",
 		AppBom5json:                  "application/vnd.blackducksoftware.bill-of-materials-5+json",
 		AppBom6json:                  "application/vnd.blackducksoftware.bill-of-materials-6+json",
+		AppBom7json:                  "application/vnd.blackducksoftware.bill-of-materials-7+json",
 		AppComponentDetail4json:      "application/vnd.blackducksoftware.component-detail-4+json",
 		AppComponentDetail5json:      "application/vnd.blackducksoftware.component-detail-5+json",
 		Appcopyright4json:            "application/vnd.blackducksoftware.copyright-4+json",
