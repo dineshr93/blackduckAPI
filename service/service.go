@@ -212,6 +212,9 @@ func (h *HUB) PrepareBSBEBody(matchString string) {
 		}
 	}
 	// fmt.Println(items)
+	if len(items) == 0 {
+		log.Fatalln("No source BOM entries matched match string '" + matchString + "'; nothing to submit. Check the match string against the composite paths returned by source-bom-entries.")
+	}
 	b, err := json.Marshal(&items)
 	if err != nil {
 		fmt.Println(err)

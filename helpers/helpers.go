@@ -147,13 +147,15 @@ func GetResponse(client *http.Client, req *http.Request) ([]byte, int, error) {
 
 	// Handling for PUT request, 204 is success with no BODY
 	if req.Method == http.MethodPut {
-		var b []byte
 		if res.StatusCode != http.StatusNoContent {
-			log.Fatalln("Status code", res.StatusCode, err)
-
-			return b, res.StatusCode, err
+			databytes, readErr := io.ReadAll(res.Body)
+			if readErr != nil {
+				log.Fatalln("Status code", res.StatusCode, "and could not read response body:", readErr)
+			}
+			log.Fatalln("Status code", res.StatusCode, "response body:", string(databytes))
+			return databytes, res.StatusCode, err
 		}
-		return b, res.StatusCode, err
+		return nil, res.StatusCode, err
 	}
 	databytes, err := io.ReadAll(res.Body)
 
